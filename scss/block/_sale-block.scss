@@ -1,0 +1,49 @@
+.sale_block {
+  position: relative;
+}
+
+.sale_block__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sale_box {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -93px;
+}
+
+.sale_box__card {
+  max-width: 417px;
+  height: 100px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+}
+
+.sale__title {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  color: rgb(34, 50, 99);
+  max-width: 202px;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 150%;
+}
+
+.sale__text {
+  position: absolute;
+  right: 22px;
+  bottom: -232px;
+  color: rgb(64, 191, 255);
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+}

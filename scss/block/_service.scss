@@ -1,0 +1,24 @@
+.service {
+  margin: 115px 0;
+}
+
+.service__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 257px;
+  text-align: center;
+}
+
+.service__img {
+  margin-bottom: 53px;
+}
+
+.service__title {
+  color: rgb(34, 38, 42);
+  font-family: "Poppins";
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 41px;
+  text-transform: uppercase;
+}

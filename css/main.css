@@ -1,0 +1,666 @@
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin/poppins-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v20-latin/poppins-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin/poppins-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v20-latin/poppins-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1500px;
+  padding-left: 104px;
+  padding-right: 104px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 2px solid rgb(250, 250, 251);
+  padding-bottom: 14px;
+}
+
+.header__top__lang {
+  color: rgb(38, 38, 38);
+  display: flex;
+  font-family: "Poppins";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.header__top__lang__item {
+  margin-right: 5px;
+}
+
+.arrow_down {
+  margin-right: 10px;
+}
+
+.header__top__items {
+  display: flex;
+  align-items: center;
+  gap: 88px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.header__top__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.header__top__items__link {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 20px;
+  color: rgb(38, 38, 38);
+}
+
+.main_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+.logo_block {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo_text {
+  color: rgb(34, 38, 42);
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.main_header__list {
+  display: flex;
+  align-items: center;
+  gap: 97px;
+}
+
+.main_header__item__link {
+  color: rgb(38, 38, 38);
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.main_header__item__link:hover {
+  color: rgb(64, 191, 255);
+}
+
+.hero {
+  margin-top: 26px;
+  padding-top: 258px;
+  padding-bottom: 166px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/hero-bg.jpg");
+  z-index: -1;
+}
+
+.hero__title {
+  width: 573px;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
+.sale_block {
+  position: relative;
+}
+
+.sale_block__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sale_box {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -93px;
+}
+
+.sale_box__card {
+  max-width: 417px;
+  height: 100px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 5px;
+}
+
+.sale__title {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  color: rgb(34, 50, 99);
+  max-width: 202px;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 150%;
+}
+
+.sale__text {
+  position: absolute;
+  right: 22px;
+  bottom: -232px;
+  color: rgb(64, 191, 255);
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+}
+
+.products {
+  margin-top: 363px;
+  position: relative;
+}
+
+.products__title {
+  color: rgb(34, 38, 42);
+  font-family: "Poppins";
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 53px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.modal {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(114, 111, 111, 0.3607843137);
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.modal__content {
+  max-width: 1300px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #fff;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
+.active {
+  display: flex;
+}
+
+.modal__block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal__header_title {
+  margin-left: 50px;
+}
+
+.modal__header_title:last-child {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.modal__card {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgb(51, 160, 255);
+  transition: all 0.3s ease;
+}
+
+.modal__card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal__img {
+  margin-left: 38px;
+  margin-right: 28px;
+  width: 70px;
+}
+
+.modal__basket {
+  position: relative;
+}
+
+.modal__basket__text {
+  color: #fff;
+  position: absolute;
+  top: -13px;
+  left: 7px;
+  background-color: rgb(247, 74, 189);
+  border-radius: 50%;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_total {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.rate_img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.add_btn {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  background-color: rgb(64, 191, 255);
+  padding: 4px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid rgb(51, 160, 255);
+}
+
+.add_btn:hover {
+  background-color: #fff;
+  color: rgb(51, 160, 255);
+  border: 1px solid rgb(51, 160, 255);
+}
+
+.modal__price {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.plus_btn {
+  margin-right: 10px;
+}
+
+.delete_btn {
+  background: transparent;
+  color: red;
+}
+
+.button_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.close_modal {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  background-color: rgb(64, 191, 255);
+  padding: 4px 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid rgb(51, 160, 255);
+}
+
+.close_modal:hover {
+  background-color: #fff;
+  color: rgb(51, 160, 255);
+  border: 1px solid rgb(51, 160, 255);
+}
+
+.products__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px;
+  margin-top: 26px;
+}
+
+.products__card {
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 30px;
+  border: 1px solid rgb(182, 179, 179);
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.products__card:hover {
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.products__card__img {
+  margin: 0 auto;
+  max-width: 120px;
+  height: 120px;
+  transition: all 0.3s ease;
+}
+
+.products__card__title {
+  color: rgb(34, 50, 99);
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
+.price_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.products__card__text {
+  text-decoration: line-through;
+  color: rgb(131, 142, 148);
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+}
+
+.sale_price {
+  color: rgb(64, 191, 255);
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+}
+
+.sale_percent {
+  color: rgb(241, 86, 105);
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+}
+
+.btn_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.category_btn {
+  color: rgb(38, 38, 38);
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.category_btn:hover {
+  color: rgb(51, 160, 255);
+}
+
+.show_items_block {
+  margin-top: 50px;
+  display: flex;
+}
+
+.open_modal {
+  margin-left: auto;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  background-color: rgb(64, 191, 255);
+  padding: 4px 12px;
+  cursor: pointer;
+  border: 1px solid rgb(51, 160, 255);
+}
+
+.open_modal:hover {
+  background-color: #fff;
+  color: rgb(51, 160, 255);
+  border: 1px solid rgb(51, 160, 255);
+}
+
+.search_input {
+  font-family: "Poppins";
+  outline: none;
+  border: 2px solid rgb(64, 191, 255);
+  height: 30px;
+  padding: 19px 27px;
+  color: rgb(38, 38, 38);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.search_btn {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  background-color: rgb(64, 191, 255);
+  padding: 4px 11px;
+  cursor: pointer;
+  border: 1px solid rgb(51, 160, 255);
+}
+
+.search_btn:hover {
+  background-color: #fff;
+  color: rgb(51, 160, 255);
+  border: 1px solid rgb(51, 160, 255);
+}
+
+.active_tab {
+  color: rgb(51, 160, 255);
+  border-bottom: 1px solid rgb(51, 160, 255);
+}
+
+.service {
+  margin: 115px 0;
+}
+
+.service__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 257px;
+  text-align: center;
+}
+
+.service__img {
+  margin-bottom: 53px;
+}
+
+.service__title {
+  color: rgb(34, 38, 42);
+  font-family: "Poppins";
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: rgb(188, 221, 254);
+  padding: 149px 134px;
+}
+
+.footer__cards {
+  display: flex;
+  justify-content: center;
+  gap: 189px;
+  margin-bottom: 200px;
+}
+
+.footer__card {
+  max-width: 221px;
+}
+
+.footer__card:nth-child(2) {
+  max-width: 200px;
+}
+
+.footer__card:nth-child(3) {
+  max-width: 120px;
+}
+
+.footer_logo__block {
+  margin-bottom: 16px;
+}
+
+.footer__title {
+  margin-bottom: 19px;
+  color: rgb(34, 38, 42);
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.footer__text {
+  color: rgb(34, 38, 42);
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: rgb(246, 247, 248);
+  margin-bottom: 30px;
+}
+
+.footer__items:nth-child(1) {
+  color: rgb(34, 38, 42);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}/*# sourceMappingURL=main.css.map */

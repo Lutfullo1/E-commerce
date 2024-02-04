@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container header__container">
+        <div class="header__top">
+          <ul class="header__top__lang">
+            <li class="header__top__lang__item">en</li>
+            <img
+              class="arrow_down"
+              src="./img/arrow-down.svg"
+              alt="arrow-down"
+            />
+            <li class="header__top__lang__item">usd</li>
+            <img
+              class="arrow_down"
+              src="./img/arrow-down.svg"
+              alt="arrow-down"
+            />
+          </ul>
+          <ul class="header__top__items">
+            <li class="header__top__item">
+              <img
+                class="header__top__items_img"
+                src="./img/profile-img.svg"
+                alt=""
+              />
+              <a class="header__top__items__link" href="">My profile</a>
+            </li>
+            <li class="header__top__item">
+              <img
+                class="header__top__items_img"
+                src="./img/basket.svg"
+                alt=""
+                srcset=""
+              />
+              <a class="header__top__items__link" href="">Items</a>
+            </li>
+            <li class="header__top__item">
+              <a class="header__top__items__link" href="">$0.00</a>
+              <img
+                class="header__top__items_img"
+                src="./img/search-icon.svg"
+                alt=""
+                srcset=""
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="main_header">
+          <div class="logo_block">
+            <img src="./img/logo.svg" alt="" srcset="" />
+            <p class="logo_text">E-comm</p>
+          </div>
+          <ul class="main_header__list">
+            <li class="main_header__item">
+              <a class="main_header__item__link" href="#">home</a>
+            </li>
+            <li class="main_header__item">
+              <a class="main_header__item__link" href="#">bags</a>
+            </li>
+            <li class="main_header__item">
+              <a class="main_header__item__link" href="#">sneakers</a>
+            </li>
+            <li class="main_header__item">
+              <a class="main_header__item__link" href="#">belt</a>
+            </li>
+            <li class="main_header__item">
+              <a class="main_header__item__link" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero__container">
+          <h1 class="hero__title">Super Flash Sale 50% Off</h1>
+        </div>
+      </section>
+      <!-- /HERO -->
+
+      <!-- SALE-BLOCK -->
+      <section class="sale_block">
+        <div class="container sale_block__container">
+          <div class="sale_box">
+            <div class="sale_box__card">
+              <h3 class="sale__title">FS - QUILTED MAXI CROSS BAG</h3>
+              <img class="sale__img" src="./img/purse.png" alt="" />
+              <p class="sale__text">$299,43</p>
+            </div>
+            <div class="sale_box__card">
+              <h3 class="sale__title">FS - NIKE AIR MAX CROSS BAG</h3>
+              <img class="sale__img" src="./img/Nike1.png" alt="" />
+              <p class="sale__text">$299,43</p>
+            </div>
+            <div class="sale_box__card">
+              <h3 class="sale__title">FS - QUILTED MAXI CROSS BAG</h3>
+              <img class="sale__img" src="./img/Nike2.png" alt="" />
+              <p class="sale__text">$299,43</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /SALE-BLOCK -->
+
+      <!-- PRODUCTS -->
+      <section class="products">
+        <div class="container products__container">
+          <h2 class="products__title">BEST SELLER</h2>
+          <div class="modal">
+            <div class="modal__content">
+              <button class="close_modal">Close</button>
+              <div class="modal__page">
+                <div class="modal__header">
+                  <div class="modal__basket">
+                    <img
+                      class="modal__basket__img"
+                      src="./img/basket.svg"
+                      alt=""
+                      srcset=""
+                    />
+                    <p class="modal__basket__text"></p>
+                  </div>
+                  <h3 class="modal__header_title">Product</h3>
+                  <h3 class="modal__header_title">Price</h3>
+                </div>
+                <div class="modal__block"></div>
+              </div>
+            </div>
+          </div>
+          <div class="btn_box">
+            <button id="all" class="category_btn all active_tab" value="all">
+              All
+            </button>
+            <button id="electronics" class="category_btn" value="electronics">
+              Electronic
+            </button>
+            <button id="men" class="category_btn" value="men's clothing">
+              Men's clothing
+            </button>
+            <button id="women" class="category_btn" value="women's clothing">
+              Women's clothing
+            </button>
+          </div>
+          <div class="show_items_block">
+            <input
+              class="search_input"
+              type="text"
+              placeholder="Search query..."
+            />
+            <button class="search_btn" type="submit">Search</button>
+            <button class="open_modal">Open Cart</button>
+          </div>
+          <div class="products__content"></div>
+        </div>
+      </section>
+      <!-- /PRODUCTS -->
+
+      <!-- SERVICE -->
+      <section class="service">
+        <div class="container service__container">
+          <div class="service__card">
+            <img
+              class="service__img"
+              src="./img/shipping.svg"
+              alt=""
+              srcset=""
+            />
+            <h4 class="service__title">free shipping</h4>
+          </div>
+          <div class="service__card">
+            <img class="service__img" src="./img/refund.svg" alt="" srcset="" />
+            <h4 class="service__title">100% refund</h4>
+          </div>
+          <div class="service__card">
+            <img
+              class="service__img"
+              src="./img/support.svg"
+              alt=""
+              srcset=""
+            />
+            <h4 class="service__title">suppor 24/7</h4>
+          </div>
+        </div>
+      </section>
+      <!-- /SERVICE -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__cards">
+          <div class="footer__card">
+            <div class="logo_block footer_logo__block">
+              <img class="footer__img" src="./img/logo.svg" alt="" srcset="" />
+              <p class="logo_text">E-comm</p>
+            </div>
+            <p class="footer__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever.Since the 1500s, when an unknown printer.
+            </p>
+          </div>
+          <div class="footer__card">
+            <h4 class="footer__title">Follow us</h4>
+            <p class="footer__text">
+              Since the 1500s, when an unknown printer took a galley of type and
+              scrambled.
+            </p>
+          </div>
+          <div class="footer__card">
+            <h4 class="footer__title">Contact us</h4>
+            <p class="footer__text">
+              E-Comm , 4578 Marmora Road, Glasgow D04 89GR
+            </p>
+          </div>
+        </div>
+        <hr />
+        <ul class="footer__bottom">
+          <li class="footer__items">
+            © 2018 Ecommerce theme by www.bisenbaev.com
+          </li>
+          <li class="footer__items">
+            <img src="./img/brands.svg" alt="" srcset="" />
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
